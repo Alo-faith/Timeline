@@ -4,14 +4,14 @@ import React from "react";
 import events from "../events";
 
 //
-import Part from "./Part";
+import Element from "./Element";
 
 //  style
 import { ListWrapper } from "../styles";
 
 const List = () => {
   const eventList = events.map((event) => (
-    <Part event={event} key={event.id} />
+    <Element event={event} key={event.id} />
   ));
 
   return <ListWrapper>{eventList}</ListWrapper>;
